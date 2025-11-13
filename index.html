@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نموذج طلب توظيف PikHire</title>
+  <style>
+    body {font-family: Tahoma, sans-serif; background:#f5f5f5; margin:0; padding:20px;}
+    .container {max-width:700px; margin:auto; background:#fff; padding:25px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+    h1 {text-align:center; margin-bottom:20px;}
+    label {display:block; margin-top:12px; font-weight:bold;}
+    input, textarea {width:100%; padding:10px; margin-top:6px; border:1px solid #ccc; border-radius:6px;}
+    textarea {min-height:100px;}
+    button {margin-top:20px; background:#0078d7; color:#fff; border:none; padding:12px; border-radius:6px; cursor:pointer; width:100%;}
+    button:hover {background:#005fa3;}
+    .note {font-size:13px; color:#555; margin-top:10px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>نموذج طلب توظيف PikHire</h1>
+    <form action="YOUR_FORM_ENDPOINT" method="POST">
+      <label>الاسم</label>
+      <input type="text" name="first_name" required>
+
+      <label>الكنية</label>
+      <input type="text" name="last_name" required>
+
+      <label>اسم الأب</label>
+      <input type="text" name="father_name">
+
+      <label>اسم الأم</label>
+      <input type="text" name="mother_name">
+
+      <label>محل الولادة</label>
+      <input type="text" name="birth_place">
+
+      <label>تاريخ الولادة</label>
+      <input type="date" name="birth_date">
+
+      <label>مكان الإقامة الحالي</label>
+      <input type="text" name="current_residence">
+
+      <label>رقم الهاتف</label>
+      <input type="tel" name="phone" placeholder="+963..." required>
+
+      <label>المؤهلات العلمية</label>
+      <textarea name="qualifications"></textarea>
+
+      <label>الشهادات الدراسية</label>
+      <textarea name="certificates"></textarea>
+
+      <label>نبذة عنك</label>
+      <textarea name="about"></textarea>
+
+      <label>البريد الإلكتروني</label>
+      <input type="email" name="email" required>
+
+      <button type="submit">إرسال الطلب</button>
+    </form>
+    <p class="note">شركة PikHire للتوظيف — خاصة، غير ربحية، التسجيل مجاني للجميع وغير تابعة لأي جهة.</p>
+  </div>
+</body>
+</html>
